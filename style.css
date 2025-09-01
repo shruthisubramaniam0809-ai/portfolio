@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  perspective: 1000px;
+}
+
+/* Container */
+.portfolio-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+/* Header */
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+header a {
+  color: #00e6ff;
+  text-decoration: none;
+}
+
+/* Glow Effect */
+.glow {
+  color: #fff;
+  text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff, 0 0 30px #00e6ff;
+}
+
+/* Card Sections */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transform: rotateY(0deg);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card:hover {
+  transform: rotateY(10deg) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+}
+
+/* Headings */
+h2 {
+  color: #00e6ff;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
